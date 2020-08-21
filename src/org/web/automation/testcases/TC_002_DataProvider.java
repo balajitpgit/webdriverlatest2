@@ -21,7 +21,7 @@ private void tc_002(String User, String Pass) throws IOException   {
 	
 	driver.findElement(By.xpath(PropertyReader.elementConfigReader("login_page_email_xpath"))).sendKeys(User);
 	driver.findElement(By.xpath(PropertyReader.elementConfigReader("login_page_pass_xpath"))).sendKeys(Pass);
-	CaptureScreenshot.takeScreenshot(driver); //<-----To capture screenshots
+	CaptureScreenshot.takeScreenshot(driver); //<-----To capture screenshots1
 }
 
 @DataProvider(name="Excel") // <-----Data driven using input from Excel sheet
